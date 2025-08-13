@@ -61,7 +61,7 @@ Adicione no `package.json`:
 "scripts": {
   "test": "cypress run",
   "test:open": "cypress open",
-  "test:cadastro": "cypress run --spec 'cypress/e2e/create_user.cy.js'",
+  "test:create_user": "cypress run --spec 'cypress/e2e/create_user.cy.js'",
   "test:login": "cypress run --spec 'cypress/e2e/login.cy.js'"
   "test:cart_and_checkout": "cypress run --spec 'cypress/e2e/cart_and_checkout.cy.js'"
 
