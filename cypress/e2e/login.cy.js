@@ -33,25 +33,4 @@ describe('Login', () =>  {
         
     })
 
-    it('Tentativa de login sem informar a senha', () =>{
-
-
-        
-    })
-
-    it('Tentativa de login com o usuário inválido', () =>{
-
-        
-    })
-
-    it('Tentativa de login com a senha inválida', () =>{
-
-        
-    })
-
-    it('Tentativa de login com a usuário bloqueado', () =>{
-
-    })
-
-
 })

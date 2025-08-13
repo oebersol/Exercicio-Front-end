@@ -19,7 +19,7 @@ describe('Cadastro de usuário', () => {
         cadastro_usuario_page.acessarCadastroUsuario()
     })
 
-    it.only('Cadastro com sucesso ', () => {
+    it('Cadastro com sucesso ', () => {
         cadastro_usuario_page.fillName(nome_fake)
         cadastro_usuario_page.fillLastName(sobrenome_fake)
 
@@ -37,29 +37,6 @@ describe('Cadastro de usuário', () => {
 
     it('Campo Email vazio', () => {
 
-
-
-    })
-
-    it('Campo Email inválido', () => {
-
-
-
-    })
-
-    it('Campo Senha vazio', () => {
-
-
-
-    })
-
-    it('Campo Senha inválido', () => {
-
-
-
-    })
-
-    it('Campo Nome vazio', () => {
 
 
     })

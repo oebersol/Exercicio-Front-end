@@ -18,7 +18,7 @@ describe('Adicionando e removendo do carrinho', ()=>{
     })
 
 
-    it.only('Adicionando ao carrinho e fazendo checkout', () =>{
+    it('Adicionando ao carrinho e fazendo checkout', () =>{
         cy.get('.home-main > .content').click()
 
         cy.get('#product-item-info_4 > .photo > .product-image-container > .product-image-wrapper > .product-image-photo').click()
