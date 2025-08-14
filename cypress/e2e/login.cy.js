@@ -22,7 +22,7 @@ describe('Login', () =>  {
 
     })
 
-    it.('Tentativa de login com usuário inexistente', () =>{
+    it('Tentativa de login com usuário inexistente', () =>{
 
         page_objects.login('invalido@teste.com', usuarios.password);
 
@@ -32,13 +32,7 @@ describe('Login', () =>  {
     })
 
 
-        it('Tentativa de login com usuário inexistente', () =>{
 
-        page_objects.login('invalido@teste.com', usuarios.password);
 
-        cy.get(page_objects.elementos.campo_erro).should('be.visible')
-         .and('contain.text', 'The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.');
-        
-    })
 
 })
