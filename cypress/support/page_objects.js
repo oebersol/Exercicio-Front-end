@@ -13,7 +13,7 @@ const elementos = {
     botao_login: '#send2',
     botao_cadastro: '#form-validate > .actions-toolbar > div.primary',
     classe_logado: '.logged-in',
-    campo_erro: '.login_container',
+    campo_erro: '.message-error',
     nome_erro:'#firstname-error',
     sobrenome_erro:'#lastname-error',
     email_erro:'#email_address-error',
