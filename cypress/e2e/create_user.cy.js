@@ -1,5 +1,6 @@
 /// <reference types="cypress"/>
 
+import page_objects from "../support/page_objects.js"
 import cadastro_usuario_page from "../support/usuarios_cadastro.js"
 
 import { faker } from '@faker-js/faker'
@@ -12,7 +13,6 @@ describe('Cadastro de usuário', () => {
     const sobrenome_fake = faker.person.lastName()
     const email_fake = faker.internet.email()
     const senha_fake = 'pwd123@Bola'
-    const senha_invalida = '111' 
 
 
     beforeEach('Acessar de cadastro de usuário', ()=>{
@@ -30,7 +30,7 @@ describe('Cadastro de usuário', () => {
 
         cadastro_usuario_page.saveRegister()
 
-        cadastro_usuario_page.successRegister('Thank you for registering with Main Website Store.')
+        cadastro_usuario_page.successRegister(page_objects.mensagens.cadastro_sucesso)
 
 
     })

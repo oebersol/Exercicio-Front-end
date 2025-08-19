@@ -1,7 +1,9 @@
 {
 
     "valid_user": "roni_cost@example.com",
-    "password": "roni_cost3@example.com"
-
+    "password": "roni_cost3@example.com",
+    
+    "invalid_user": "invalid@teste.com",
+    "invalid_pass": "rr@TTb"
 
 }

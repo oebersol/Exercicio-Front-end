@@ -30,14 +30,18 @@ describe('Adicionando e removendo do carrinho', ()=>{
 
         cy.get('.showcart').click()
 
-        cy.get('#top-cart-btn-checkout').click()
+        cy.get('#ui-id-28').should("be.visible")
+        cy.contains('Proceed to Checkout').click()
+        
 
         //Verificando que chegamos no tela de checkout
-        cy.get('.shipping-address-items').should('be.visible')
+        cy.get('#shipping > .step-title').should('be.visible')
 
         cy.contains('Fixed').click();
 
         cy.get('.button').click()
+
+        cy.contains('Place Order').should("be.visible");
 
         cy.contains('Place Order').click();
         
